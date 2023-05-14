@@ -1,8 +1,6 @@
-my_tuple = ('hi', 4.5, True, 4, 'Alex', 4.24)
-print(my_tuple)
+int_tuple = (1, 2, 3)
+collection = ("hi" , 3.14, True)
+tuple_of_one = ()
 
-print(my_tuple[1:])
-print(my_tuple[5] + 5)
-
-for element in my_tuple:
-    print(element, end=', ')
+print(collection)
+print(type(tuple_of_one))
