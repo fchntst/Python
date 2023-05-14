@@ -1,18 +1,21 @@
-# MANTEPSE TON ARITHMO
+# Guess the number game
 
-print("""  !hello! 
-  !-----! let's play a game,
-  !-----! you have to find the hidden number
-  !-----! you have 10 tries!
-  !-----! good luck """)
+print(" ")
+print("""!hello! 
+!-----! let's play a game,
+!-----! you have to find the hidden number
+!-----! you have 10 tries!
+!-----! good luck """)
 
 real_number = True
+print(" ")
 hidden_number = int(input("type here and try to find the number!: "))
 tries = 10
 cnt = 1
 while real_number:
     tries -= cnt
-    print("you still have: " + str(tries) + " tries")
+    print(str(tries) + " tries left")
+
     if tries == 0:
         print("game over")
         break
@@ -24,7 +27,7 @@ while real_number:
     elif hidden_number <= 0:
         print("""you are way to far from the hidden number,
 you have to add more numbers!""")
-        hidden_number = int(input("try again here: "))
+        hidden_number = int(input("try again: "))
 
     elif 0 <= hidden_number <= 60:
         print("you need to add more!")
@@ -46,8 +49,7 @@ you have to add more numbers!""")
         print("you need to subtract a little more!")
         hidden_number = int(input("try again here: "))
 
-    elif 150 <= hidden_number <= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000:
+    elif 150 <= hidden_number:
         print("""you are way to far from the hidden number,
-        you have to subtract more numbers!""")
+you have to subtract more numbers!""")
         hidden_number = int(input("try again here: "))
-
